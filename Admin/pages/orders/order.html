@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | General Form Elements</title>
+  <title>AdminLTE 3 | DataTables</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
@@ -162,114 +166,114 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-
+   
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Sản phẩm
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-              <ul class="nav nav-treeview">
+        
+               <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-table"></i>
+                  <p>
+                    Sản phẩm
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="../products/product.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Tất cả sản phẩm</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../adds/add_product.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Thêm sản phẩm</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../products/menu.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Danh mục</p>
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-table"></i>
+                  <p>
+                    Khách hàng
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="../account/contacts.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Tất cả khách hàng</p>
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+               <!-- Đơn hàng -->
                 <li class="nav-item">
-                  <a href="../products/product.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Tất cả sản phẩm</p>
-                  </a>
+                    <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-table"></i>
+                    <p>
+                        Đơn hàng
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Tất cả đơn hàng</p>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="newOrders.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Đơn hàng mới</p>
+                        </a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="../adds/add_product.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Thêm sản phẩm</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="../products/menu.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Danh mục</p>
-                  </a>
-                </li>
-              </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Khách hàng
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="../account/contacts.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Tất cả khách hàng</p>
-                  </a>
-                </li>
-              </ul>
-          </li>
-           <!-- Đơn hàng -->
-           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Đơn hàng
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="../../pages/orders/order.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Tất cả đơn hàng</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="../../pages/orders/newOrders.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Đơn hàng mới</p>
-                  </a>
-                </li>
-              </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Bài viết
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="../products/blog.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Tất cả bài viết</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="../adds/add_blog.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Viết bài mới</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="../products/chuyen_muc.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Chuyên mục</p>
-                  </a>
-                </li>
-              </ul>
-          </li>
-        </ul>
-      </nav>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-table"></i>
+                  <p>
+                    Bài viết
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                  <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                      <a href="../products/blog.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Tất cả bài viết</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../adds/add_blog.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Viết bài mới</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../products/chuyen_muc.html" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>Chuyên mục</p>
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+          </nav>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
@@ -282,12 +286,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Thêm danh mục</h1>
+            <h1>DataTables</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">General Form</li>
+              <li class="breadcrumb-item active">DataTables</li>
             </ol>
           </div>
         </div>
@@ -298,44 +302,58 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12">
-            <div class="card card-primary">
+          <div class="col-12">
+            <div class="card">
+            </div>
+            <!-- /.card -->
+
+            <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Thêm danh mục mới</h3>
+                <h3 class="card-title">Tất cả đơn hàng</h3>
               </div>
               <!-- /.card-header -->
-              <!-- form start -->
-              <form>
-                <div class="card-body">
-                  <div class="form-group">
-                    <label>Danh mục cha</label>
-                    <select class="custom-select form-control-border" id="exampleSelectBorder">
-                      <option>iphone</option>
-                      <option>ipad</option>
-                      <option>mac</option>
-                      <option>apple-watch</option>
-                      <option>phu-kien</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Tên danh mục</label>
-                    <input type="text" class="form-control" id="exampleInputName1" >
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Đường dẫn</label>
-                    <input type="text" class="form-control" id="exampleInputSlug1" >
-                  </div>
-                </div>
-                <!-- /.card-body -->
-
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Thêm danh mục mới</button>
-                </div>
-              </form>
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Mã Khách Hàng</th>
+                    <th>Mã Đơn Hàng</th>
+                    <th>Tổng Tiền</th>
+                    <th>Thời Gian</th>
+                    <th>Tình Trạng</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+                      <a href="../account/contacts.html">
+                        Trident
+                      </a>
+                    </td>
+                    <td>
+                      <a href="./invoices.html">
+                        Internet
+                      Explorer 4.0
+                      </a>
+                    </td>
+                    <td>Win 95+</td>
+                    <td> 4</td>
+                    <td>X</td>
+                  
+                  </tbody>
+                  <tfoot>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
             </div>
+            <!-- /.card -->
           </div>
+          <!-- /.col -->
         </div>
-      </div><!-- /.container-fluid -->
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
   </div>
@@ -359,17 +377,40 @@
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- bs-custom-file-input -->
-<script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
 <!-- Page specific script -->
 <script>
-$(function () {
-  bsCustomFileInput.init();
-});
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
 </script>
 </body>
 </html>
