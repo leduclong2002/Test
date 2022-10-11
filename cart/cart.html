@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cart.css" />
+
+    <link
+      rel="stylesheet"
+      href="/asset/font/themify-icons/themify-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="fs-wrap">
+          <div class="logo-fstudio">
+            <img src="/asset/img/logo-fstu-aar.webp" alt="logo-Fstudio" />
+          </div>
+          <ul class="nav">
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">Apple Watch</a></li>
+            <li><a href="#">Phụ kiện</a></li>
+            <li><a href="#">Tin tức </a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="#">VIP Member</a></li>
+          </ul>
+          <div class="icon-containter">
+            <div class="search-btn">
+              <a href=""><i class="ti-search icon"></i></a>
+            </div>
+            <div class="cart-btn">
+              <a href="#"><i class="ti-shopping-cart icon"></i></a>
+            </div>
+            <div class="user-btn">
+              <a href="/profile/profile.html"><i class="ti-user icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="subcontainer">
+          <div class="subheading">
+            <button class="check_add">Add</button>
+            <h3 class="inline-block">
+              GIỎ HÀNG CỦA BẠN
+              <!-- <span>(1 sản phẩm)</span>-->
+            </h3>
+            <a href="" class="float-right home-link">Mua thêm sản phẩm khác</a>
+          </div>
+          <div class="container">
+            <div class="list-items">
+              <div class="items">
+                <div class="pic float-left">
+                  <img
+                    id="items-pic"
+                    src="/asset/img/637864944636979062_iphone-13-xanhla-1 (1).jpg"
+                    alt="Sản phẩm"
+                  />
+                </div>
+
+                <div class="float-left">
+                  <div class="items-type float-left">
+                    <h3 class="items-name">iPhone 13 128GB</h3>
+                    <div class="colors">
+                      <span>Màu</span>
+                      <ul class="ordercolorful"></ul>
+                    </div>
+                  </div>
+                  <div class="items-price float-left">
+                    <p class="end-price">
+                      <span>19.190.000</span> <sup>đ</sup>
+                    </p>
+                    <p class="price"><span>24.990.000</span> <sup>đ</sup></p>
+                    <p class="discount inline-block">Giảm -30 %</p>
+                  </div>
+
+                  <div class="items-amount float-left">
+                    <div class="wrapper">
+                      <span class="minus">-</span>
+                      <span class="num inline-block">01</span>
+                      <span class="plus">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="remove_item float-right">
+                  <i class="close-icon ti-close"></i>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+            <div class="bill-total">
+              <!-- <div class="voucher inline-block">
+                        <p class="">Sử dụng mã giảm giá:</p>
+                        <div class="voucher-code">
+                            <input type="text" placeholder="Nhập mã giảm giá" class="input voucher-input"> 
+                            <button id="check-voucher">Áp dụng</button>
+                        </div>
+                    </div> -->
+              <div class="price float-right">
+                <ul class="bill-detal">
+                  <li class="temp-price">
+                    <label>Tạm tính:</label>
+                    <p><span>24.990.000 </span><sup>đ</sup></p>
+                  </li>
+                  <li class="promo-price">
+                    <label>Khuyến mãi:</label>
+                    <p> <span>-5.800.000</span><sup>đ</sup></p>
+                  </li>
+                  <li class="last-price">
+                    <label>Tổng tiền:</label>
+                    <p><span>19.190.000 </span><sup>đ</sup></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <form action="" class="cus-form">
+              <p class="sub-title">Thông tin khách hàng</p>
+              <ul class="form">
+                <li class="row">
+                  <label class="label">Họ và tên: <sup>*</sup></label>
+                  <div class="float-right">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Nhập họ và tên"
+                      id="name"
+                    />
+                  </div>
+                  <div class="clear"></div>
+                </li>
+                <li class="row">
+                  <label class="label">Số điện thoại: <sup>*</sup></label>
+                  <div class="float-right">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Số điện thoại"
+                      id="phone"
+                    />
+                  </div>
+                  <div class="clear"></div>
+                </li>
+                <li class="row" id="email">
+                  <label class="label"
+                    >Email:
+                    <span class="inline-block">(không bắt buộc)</span>
+                  </label>
+                  <div class="float-right">
+                    <input
+                      class="input"
+                      type="email"
+                      placeholder="Email"
+                      id="email"
+                    />
+                  </div>
+                  <div class="clear"></div>
+                </li>
+                <li class="row">
+                  <div class="btn-container">
+                    <div>
+                      <button
+                        type="button"
+                        class="btn"
+                        id="next-step"
+                        onclick="send()"
+                      >
+                        <strong>Tiếp tục</strong>
+                        <span>(Chọn hình thức nhận hàng)</span>
+                      </button>
+                    </div>
+
+                    <div id="or">
+                      <p>Hoặc</p>
+                    </div>
+                    <div>
+                      <button type="button" class="btn" id="order-fast">
+                        <strong>Đặt hàng luôn</strong>
+                        <span>FPT Shop sẽ gọi cho quý khách</span>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="fs-wrap">
+          <div class="fs-ftmain clearfix">
+            <ul class="fs-ftcol fs-ftmn">
+              <li><h2>Thông tin F.Studio</h2></li>
+              <li><a href="/gioi-thieu" title="">Giới thiệu</a></li>
+              <li>
+                <a href="https://tuyendung.fptshop.com.vn/" title=""
+                  >Tuyển dụng</a
+                >
+              </li>
+            </ul>
+            <ul class="fs-ftcol fs-ftmn">
+              <li><h2>Dịch vụ &amp; hỗ trợ</h2></li>
+              <li>
+                <a
+                  href="https://fptshop.com.vn/ho-tro/chinh-sach-bao-mat"
+                  title=""
+                  >Chính sách bảo mật</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fptshop.com.vn/ho-tro/chinh-sach-doi-san-pham"
+                  title=""
+                  >Chính sách đổi sản phẩm</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fptshop.com.vn/ho-tro/chinh-sach-bao-hanh"
+                  title=""
+                  >Chính sách bảo hành</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fptshop.com.vn/ho-tro/cau-hoi-thuong-gap-apple"
+                  title=""
+                  >Câu hỏi thường gặp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://fptshop.com.vn/ho-tro/huong-dan-mua-hang"
+                  title=""
+                  >Hướng dẫn mua hàng</a
+                >
+              </li>
+            </ul>
+            <ul class="fs-ftcol fs-ftmn">
+              <li><h2>Dịch vụ &amp; hỗ trợ</h2></li>
+              <li>Địa chỉ: 261,263 Khánh Hội, P5, Q4, TP. Hồ Chí Minh</li>
+              <li>Điện thoại: 028.73023456</li>
+              <li>Fax: 08.39435773</li>
+              <li>
+                Email:
+                <a class="fs-ftmail" href="mailto:cskh@fptshop.com.vn" title=""
+                  >cskh@fptshop.com.vn</a
+                >
+              </li>
+            </ul>
+            <ul class="fs-ftcol fs-ftcall">
+              <li>
+                <p>Giao hàng miễn phí</p>
+                <h3><a href="tel:18006601" title="1800 6601">1800 6601</a></h3>
+              </li>
+              <li>
+                <p>Chăm sóc khách hàng</p>
+                <h3><a href="tel:18006616" title="1800 6616">1800 6616</a></h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="copyright">
+        <div>
+          <p>
+            Copyright 2007 - 2018 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số FPT. GPĐKKD
+            số 0311609355 do Sở KHĐT TP.HCM cấp ngày 08/03/2012
+          </p>
+          <p>
+            Apple, the Apple logo are trademark of Apple inc, registered in the
+            US, and other countries
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/cart/cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cart/cart.css">
+    <link rel="stylesheet" href="/asset/font/themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main"> 
+         <div class="header">
+            <div class="fs-wrap" >
+                <div class="logo-fstudio">
+                    <img src="/asset/img/logo-fstu-aar.webp" alt="logo-Fstudio">
+                </div>
+                <ul class="nav">
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">Apple Watch</a></li>
+                        <li><a href="#">Phụ kiện</a></li>
+                        <li><a href="#">Tin tức </a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="#">VIP Member</a></li>
+                </ul>
+                <div class="icon-containter">
+                    <div class="search-btn">
+                        <a href=""><i class="ti-search icon"></i></a>
+                    </div>
+                    <div class="cart-btn">
+                        <a href="/cart/cart.html"><i class="ti-shopping-cart icon"></i></a>
+                    </div>
+                    <div class="user-btn">
+                        <a href="#"><i class="ti-user icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+     
+        <div class="content">
+            <div class="pro-container">
+                <div class="user-profile">
+                    <div class="subnav">
+                        <div class="avatar-user navcard">
+                            <img src="/asset/img/user-icon-trendy-flat-style-isolated-grey-background-user-symbol-user-icon-trendy-flat-style-isolated-grey-background-123663211.jpg" alt="User">
+                        </div>
+                        <ul>
+                            <li class="js-content-btn font-bold"><a>General</a></li>
+                            <li class="js-password-btn"><a>Change password</a></li>
+                            <li class="js-orders-btn"><a>My orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content js-content-tab">
+                        <div class="card-body">
+                            <div class="avatar-user">
+                                <img src="/asset/img/user-icon-trendy-flat-style-isolated-grey-background-user-symbol-user-icon-trendy-flat-style-isolated-grey-background-123663211.jpg" alt="User">
+                            </div>
+                            <div class="media-body">
+                                <button class="upload">
+                                    <i class="ti-upload"></i> Upload <i class="fa fa-file" aria-hidden="true"></i>
+                                    <input type="file" name="myfile" />
+                                </button>
+                                
+                                <button class="reset">Reset</button>
+                                <p>Allowed JPG, GIF or PNG</p>
+                            </div>
+                        </div>
+
+                        <form action="" class="cus-form">
+                            <ul class="form">
+                                <li class="row">
+                                    <label class="label">Họ và Tên</label>
+                                    <div  class ="float-right">
+                                    <input class="input" type="text"  value="jfkajsf">
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <label class="label">Số điện thoại </label>
+                                    <div  class ="float-right">
+                                    <input class="input" type="text" value="0123456789" >
+                                    <!-- <div class="note">Vui lòng nhập đúng </div> -->
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="row" id="email" >
+                                    <label class="label">Email
+                                    </label>
+                                    <div  class ="float-right">
+                                    <input class="input" type="email" value="@gmail.com" >
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="row">
+                                    <label class="label">Địa chỉ</label>
+                                    <div  class ="float-right">
+                                    <input class="input" type="text"  value="Hồ Chí Minh">
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                        <div class="pro-btn-container">
+                            <button class="save">Save changes</button>
+                            <button class="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="tab-password display-off js-password-tab">
+                        <form action="" class="cus-form">
+                            <ul class="form">
+                                <li class="row">
+                                    <label class="label">Mật khẩu hiện tại</label>
+                                    <div  class ="float-right">
+                                    <input class="input password" type="password">
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="row">
+                                    <label class="label ">Mật khẩu mới</label>
+                                    <div  class ="float-right">
+                                    <input class="input  password" type="password">
+                                    <div class="note-text js-password-info">Long đây</div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="row">
+                                    <label class="label">Nhập lại mật khẩu mới</label>
+                                    <div  class ="float-right">
+                                    <input class="input password" type="password" >
+                                    <!-- <div class="note">Vui lòng nhập đúng </div> -->
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+
+                            <div class="show-password"><input type="checkbox" onclick="show_password()"> <p>Hiện mật khẩu</p></div>
+                          
+                        </form>
+                        <div class="pro-btn-container">
+                            <button class="save">Save changes</button>
+                            <button class="cancel">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="tab-orders display-off js-orders-tab">
+                        <div class="list-items">
+                            <div class="items">
+                            
+                                <div class="pic float-left">
+                                    <p>
+                                        <img id ="items-pic" src="/asset/img/637864944636979062_iphone-13-xanhla-1 (1).jpg" alt="Sản phẩm">
+                                    </p>
+                                </div>
+                
+                                <div class="items-info float-left">
+                                    <div class="items-type float-left">
+                                        <h3 class="items-name">iPhone 13 128GB</h3>
+                                        <div class="colors">
+                                            <span>Color</span>
+                                            <ul class="ordercolorful">
+                                                <!-- -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <div class="items-price float-left">
+                                        <p class = "end-price">19.190.000 đ</p>
+                                        <p class = "price">24.990.000 đ</p>
+                                        <p class = "discount inline-block">Giảm -30 %</p>
+                                    </div>
+                
+                                    <div class="items-amount float-left">
+                                        <p>Amount: </p>
+                                        <p>Day: 20/02/2002</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+                        </div>  
+                        
+                    </div>
+                </div>  
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="fs-wrap">
+                <div class="fs-ftmain clearfix">
+                    <ul class="fs-ftcol fs-ftmn">
+                        <li><h2>Thông tin F.Studio</h2></li>
+                        <li><a href="/gioi-thieu" title="">Giới thiệu</a></li>
+                        <li><a href="https://tuyendung.fptshop.com.vn/" title="">Tuyển dụng</a></li>
+                    </ul>
+                    <ul class="fs-ftcol fs-ftmn">
+                        <li><h2>Dịch vụ &amp; hỗ trợ</h2></li>
+                        <li><a href="https://fptshop.com.vn/ho-tro/chinh-sach-bao-mat" title="">Chính sách bảo mật</a></li>
+                        <li><a href="https://fptshop.com.vn/ho-tro/chinh-sach-doi-san-pham" title="">Chính sách đổi sản phẩm</a></li>
+                        <li><a href="https://fptshop.com.vn/ho-tro/chinh-sach-bao-hanh" title="">Chính sách bảo hành</a></li>
+                        <li><a href="https://fptshop.com.vn/ho-tro/cau-hoi-thuong-gap-apple" title="">Câu hỏi thường gặp</a></li>
+                        <li><a href="https://fptshop.com.vn/ho-tro/huong-dan-mua-hang" title="">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                    <ul class="fs-ftcol fs-ftmn">
+                        <li><h2>Dịch vụ &amp; hỗ trợ</h2></li>
+                        <li>Địa chỉ: 261,263 Khánh Hội, P5, Q4, TP. Hồ Chí Minh</li>
+                        <li>Điện thoại: 028.73023456</li>
+                        <li>Fax: 08.39435773</li>
+                        <li>Email: <a class="fs-ftmail" href="mailto:cskh@fptshop.com.vn" title="">cskh@fptshop.com.vn</a></li>
+                    </ul>
+                    <ul class="fs-ftcol fs-ftcall">
+                        <li>
+                            <p>Giao hàng miễn phí</p>
+                            <h3><a href="tel:18006601" title="1800 6601">1800 6601</a></h3>
+                        </li>
+                        <li>
+                            <p>Chăm sóc khách hàng</p>
+                            <h3><a href="tel:18006616" title="1800 6616">1800 6616</a></h3>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="copyright">
+            <div>
+            <p>Copyright 2007 - 2018 Công Ty Cổ Phần Bán Lẻ Kỹ Thuật Số FPT. GPĐKKD số 0311609355 do Sở KHĐT TP.HCM cấp ngày 08/03/2012</p>
+            <p>Apple, the Apple logo are trademark of Apple inc, registered in the US, and other countries</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const content_tab = document.querySelector('.js-content-tab')
+        const password_tab = document.querySelector('.js-password-tab')
+        const orders_tab = document.querySelector('.js-orders-tab')
+        
+        const btn_content = document.querySelector('.js-content-btn')
+        const btn_password = document.querySelector('.js-password-btn')
+        const btn_order = document.querySelector('.js-orders-btn')
+
+        function show_content(){
+
+            btn_content.classList.add('font-bold')
+            btn_password.classList.remove('font-bold')
+            btn_order.classList.remove('font-bold')
+
+            content_tab.classList.remove('display-off')
+            password_tab.classList.add('display-off')
+            orders_tab.classList.add('display-off')
+        }
+
+        function show_password(){
+
+            btn_password.classList.add('font-bold')
+            btn_content.classList.remove('font-bold')
+            btn_order.classList.remove('font-bold')
+
+            password_tab.classList.remove('display-off')
+            content_tab.classList.add('display-off')
+            orders_tab.classList.add('display-off')
+        }
+
+        function show_orders(){
+
+            btn_order.classList.add('font-bold')
+            btn_password.classList.remove('font-bold')
+            btn_content.classList.remove('font-bold')
+
+            orders_tab.classList.remove('display-off')
+            password_tab.classList.add('display-off')
+            content_tab.classList.add('display-off')
+        }
+
+        btn_content.addEventListener('click',show_content)
+        btn_password.addEventListener('click',show_password)
+        btn_order.addEventListener('click',show_orders)
+    </script>
+    <script src="/cart/cart.html"></script>
+</body>
+</html> 
